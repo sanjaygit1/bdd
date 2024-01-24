@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-01-24T17:44:35 IST" name="Default suite" finished-at="2024-01-24T17:45:15 IST" duration-ms="40139">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunnerFile.TestNGRunnerFile@2ddc9a9f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-01-24T17:44:35 IST" name="Default test" finished-at="2024-01-24T17:45:15 IST" duration-ms="40139">
+      <class name="RunnerFile.TestNGRunnerFile">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:RunnerFile.TestNGRunnerFile@2ddc9a9f]" started-at="2024-01-24T17:44:35 IST" name="setUpClass" finished-at="2024-01-24T17:44:35 IST" duration-ms="522" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@315f09ef]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunnerFile.TestNGRunnerFile@2ddc9a9f]" started-at="2024-01-24T17:44:35 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-24T17:44:39 IST" duration-ms="3764" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login to facebook with valid username valid password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login to Application"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.cucumber.core.runner.AmbiguousStepDefinitionsException">
+            <message>
+              <![CDATA["user enters valid username "admin" and valid pwd "admin"" matches more than one step definition:
+  "^user enters valid username (.+) and valid pwd (.+)$" in stepDefination.LoginTest.user_enters_valid_username_admin1_and_valid_pwd_admin(java.lang.String,java.lang.String)
+  "user enters valid username {string} and valid pwd {string}" in stepDefination.LoginTest.user_enters_valid_username_and_valid_pwd(java.lang.String,java.lang.String)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.core.runner.AmbiguousStepDefinitionsException: "user enters valid username "admin" and valid pwd "admin"" matches more than one step definition:
+  "^user enters valid username (.+) and valid pwd (.+)$" in stepDefination.LoginTest.user_enters_valid_username_admin1_and_valid_pwd_admin(java.lang.String,java.lang.String)
+  "user enters valid username {string} and valid pwd {string}" in stepDefination.LoginTest.user_enters_valid_username_and_valid_pwd(java.lang.String,java.lang.String)
+at io.cucumber.core.runner.CachingGlue.findStepDefinitionMatch(CachingGlue.java:402)
+at io.cucumber.core.runner.CachingGlue.stepDefinitionMatch(CachingGlue.java:370)
+at io.cucumber.core.runner.Runner.matchStepToStepDefinition(Runner.java:183)
+at io.cucumber.core.runner.Runner.createTestStepsForPickleSteps(Runner.java:163)
+at io.cucumber.core.runner.Runner.createTestCaseForPickle(Runner.java:146)
+at io.cucumber.core.runner.Runner.runPickle(Runner.java:74)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.core.runner.AmbiguousStepDefinitionsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunnerFile.TestNGRunnerFile@2ddc9a9f]" started-at="2024-01-24T17:44:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-24T17:44:50 IST" duration-ms="10459" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login to facebook with valid username valid password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login to Application"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunnerFile.TestNGRunnerFile@2ddc9a9f]" started-at="2024-01-24T17:44:50 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-24T17:44:58 IST" duration-ms="8627" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login to facebook with valid username valid password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login to Application"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunnerFile.TestNGRunnerFile@2ddc9a9f]" started-at="2024-01-24T17:44:58 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-24T17:45:15 IST" duration-ms="16681" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login to facebook with valid username valid password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login to Application"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:RunnerFile.TestNGRunnerFile@2ddc9a9f]" started-at="2024-01-24T17:45:15 IST" name="tearDownClass" finished-at="2024-01-24T17:45:15 IST" duration-ms="30" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- RunnerFile.TestNGRunnerFile -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
